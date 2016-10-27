@@ -11,14 +11,14 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.ts']
+    extensions: ['', '.ts', '.js']
   },
 
   module: {
     loaders: [
       {
         test: /\.ts$/,
-        loaders: ['ts', 'angular2-template-loader'],
+        loaders: ['awesome-typescript-loader', 'angular2-template-loader'],
         exclude: /node_modules/
       },
       {
@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loaders: ['file?name=assets/[name].[hash].[ext]']
+        loaders: ['file?name=assets/img/[name].[hash].[ext]']
       },
       {
         test: /\.css$/,

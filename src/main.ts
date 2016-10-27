@@ -1,7 +1,7 @@
 import { platformBrowserDynamic  } from '@angular/platform-browser-dynamic';
-import { LocationStrategy, HashLocationStrategy  } from '@angular/common';
+//import { LocationStrategy, HashLocationStrategy  } from '@angular/common';
 import { enableProdMode } from '@angular/core';
-import { XHRBackend } from '@angular/http';
+//import { XHRBackend } from '@angular/http';
 
 import { AppModule } from './app/app.module';
 
