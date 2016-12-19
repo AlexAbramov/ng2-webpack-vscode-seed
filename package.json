@@ -25,6 +25,7 @@
     "@types/core-js": "^0.9.35",
     "@types/node": "^6.0.52",
     "@types/jasmine": "^2.5.38",
+    "angular-router-loader": "^0.4.0",
     "awesome-typescript-loader": "^3.0.0-beta.17",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
