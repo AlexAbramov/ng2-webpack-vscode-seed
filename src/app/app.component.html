@@ -1,5 +1,9 @@
 <main>
-<h1>{{title}}</h1>
-<button (click)="test()">test</button>
-<h2>{{text}}</h2>
-</main>
+    <h1>App component</h1>
+    <p>
+        <span>Navigation:</span>
+        <a routerLink="/snappy" routerLinkActive="active">Snappy</a>
+        <a routerLink="/lazy" routerLinkActive="active">Lazy</a>
+    </p>
+    <router-outlet></router-outlet>
+<main>
