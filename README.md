@@ -20,7 +20,12 @@ Run WebPack development server:
 
 Run web application by clicking Debug, "Launch localhost with source maps" or just click F5 in VSCode.
 
+## References
 
-### License
+Angular2 router loader https://github.com/brandonroberts/angular-router-loader
 
-MIT (http://www.opensource.org/licenses/mit-license.php)
+Angular2 lazy loading with Webpack https://medium.com/@daviddentoom/angular-2-lazy-loading-with-webpack-d25fe71c29c1#
+
+## License
+
+MIT http://www.opensource.org/licenses/mit-license.php
