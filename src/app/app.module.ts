@@ -9,10 +9,9 @@ import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   { path: 'snappy', component: SnappyComponent },
   { path: '', redirectTo: 'snappy', pathMatch: 'full' },
-  { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule' },
+  { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule?chunkName=lazy' },
   { path: 'about', component: AboutComponent }
 ];
-
 
 @NgModule({
   imports: [

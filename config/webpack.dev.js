@@ -11,7 +11,7 @@ module.exports = webpackMerge(commonConfig, {
     publicPath: 'http://localhost:8081/',
     sourceMapFilename: '[name].js.map',
     filename: '[name].js',
-    chunkFilename: '[id].chunk.js'
+    chunkFilename: '[name].chunk.js'
   },
 
   plugins: [
