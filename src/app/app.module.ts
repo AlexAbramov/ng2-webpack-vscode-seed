@@ -4,10 +4,13 @@ import { HttpModule  }  from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SnappyComponent } from './snappy/snappy.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: 'snappy', component: SnappyComponent },
-  { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule' }
+  { path: '', redirectTo: 'snappy', pathMatch: 'full' },
+  { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule' },
+  { path: 'about', component: AboutComponent }
 ];
 
 
@@ -18,7 +21,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   declarations: [
-    AppComponent, SnappyComponent
+    AppComponent, SnappyComponent, AboutComponent
   ],
   bootstrap: [ AppComponent ]
 })

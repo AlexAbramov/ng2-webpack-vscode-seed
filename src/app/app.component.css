@@ -6,3 +6,8 @@ main{
 a{
     margin-left: 10px;
 }
+
+footer > a{
+    color: gray;
+    margin-left: 10px;
+}

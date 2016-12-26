@@ -50,6 +50,11 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+
+    new webpack.DefinePlugin({
+      angular_version: JSON.stringify(require(helpers.root("node_modules","@angular/core/package.json")).version),
+      webpack_version: JSON.stringify(require(helpers.root("node_modules","webpack/package.json")).version)
+    })    
   ]
 };
