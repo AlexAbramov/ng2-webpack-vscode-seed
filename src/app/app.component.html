@@ -1,13 +1,21 @@
 <main>
     <h1>App component</h1>
-    <p>
+    <nav>
         <span>Navigation:</span>
         <a routerLink="/snappy" routerLinkActive="active">Snappy</a>
         <a routerLink="/lazy" routerLinkActive="active">Lazy</a>
         <a routerLink="/about" routerLinkActive="active">About</a>
-    </p>
-    <router-outlet>
-    </router-outlet>
+    </nav>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <router-outlet></router-outlet>
+            </td>
+            <td style="width:300px;">
+                <log></log>
+            </td>
+        </tr>
+    </table>
 </main>
 <footer>
     <a href="https://github.com/AlexAbramov/ng2-webpack-vscode-seed" target="_blank">GitHub</a>

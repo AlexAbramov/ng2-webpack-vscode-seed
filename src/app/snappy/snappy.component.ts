@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Log } from '../core/log';
 
 @Component({
   selector: 'snappy',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls:['./snappy.component.css']
 })
 export class SnappyComponent implements OnInit {
-  constructor() { }
+  constructor() { 
+    Log.info('SnappyComponent.constructor');    
+  }
 
   ngOnInit() { }
 }
+
+Log.info('snappy.component.ts loaded');

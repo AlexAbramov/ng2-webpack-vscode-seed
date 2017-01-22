@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Log } from '../core/log';
 
 @Component({
   selector: 'lazy',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls:['./lazy.component.css']  
 })
 export class LazyComponent implements OnInit {
-  constructor() { }
+  constructor() { 
+    Log.info('LazyComponent.constructor');    
+  }
 
   ngOnInit() { }
 }
+
+Log.info('lazy.component.ts loaded');
