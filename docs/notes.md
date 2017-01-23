@@ -1,16 +1,20 @@
 ## Create gh-pages branch 
 
-`git clone xxx.git`
+in a new folder:
 
-`cd xxx`
+`git clone --no-checkout https://github.com/AlexAbramov/ng2-webpack-vscode-seed.git`
+
+`cd ng2-webpack-vscode-seed`
 
 `git checkout --orphan gh-pages`
 
-`git rm --cached -r .`
+`git rm -rf .`
 
-`git add index.html`
+copy the files from 'dist' folder to 'ng2-webpack-vscode-seed' one and add the files to git:
 
-`git commit -m "index"`
+`git add *`
+
+`git commit -m "demo"`
 
 `git push origin gh-pages`
 
