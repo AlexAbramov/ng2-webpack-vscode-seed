@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///src/assets/css/app.css"],"names":[],"mappings":"AAAA,mBACI,YACA,aACA,YAAa","file":"app.d8463538b88da95c005b.css","sourcesContent":["div.seed-component{\r\n    margin: 10px;\r\n    padding: 10px;\r\n    height:400px;\r\n}\n\n\n// WEBPACK FOOTER //\n// webpack:///src/assets/css/app.css"],"sourceRoot":""}
